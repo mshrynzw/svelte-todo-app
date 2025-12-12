@@ -45,7 +45,8 @@ function createTodoStore() {
 				id: crypto.randomUUID(),
 				text: text.trim(),
 				completed: false,
-				createdAt: Date.now()
+				createdAt: Date.now(),
+				updatedAt: Date.now()
 			};
 
 			update((todos) => {
